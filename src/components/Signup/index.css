@@ -1,0 +1,108 @@
+
+.top-label-input-container {
+  position: relative;
+  width: 250px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+
+.top-label-input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid  #D1D5DB;
+  border-radius: 6px;
+  background-color: #F3F4F6;
+}
+ .top-label-input-container input::placeholder{
+  color: rgb(75, 73, 73);
+  font-size: 14px;
+ }
+
+.top-label-input-container label {
+  position: absolute;
+  top: -7px;
+  left: 12px;
+  background: #F3F4F6; /* Same as container background */
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #6D28D9;
+}
+
+span{
+    color: red;
+    font-size: 14px;
+}
+
+.signup-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.signup-inner-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    background-color: #F3F4F6;
+    border: 1px solid #D1D5DB;
+    width: 290px;
+    overflow-y: auto;
+}
+.signup-card-container{
+    flex-grow: 1;
+}
+.signup-card-container h1{
+    margin-bottom: 40px;
+}
+.agency{
+    padding: 4px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.create-account-button{
+    width: 250px;
+    background-color:#6D28D9;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.error-msg{
+    color: red;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .create-account-button{
+        width: 100%;
+    }
+    .signup-inner-container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .top-label-input-container{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .signup-container{
+        padding-top: 0px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
